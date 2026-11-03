@@ -1,7 +1,7 @@
 # Pelletizer Controller — ESP32
 
-Stepper motor controller for a recycled plastic pelletizer system, built as part of a 
-university engineering showcase project. Controls a cutting/feeding mechanism using an 
+Stepper motor controller for a recycled plastic pelletizer system, built for ES 1050 at Western University 
+(Winter 2026, team of 5). Controls a cutting/feeding mechanism using an 
 ESP32, beam break sensor for automatic material detection, and potentiometer-based 
 variable speed control.
 
@@ -66,11 +66,31 @@ constexpr float    MAX_SPEED             = 6400.0f; // steps/s (~120 RPM)
 5. Upload and open Serial Monitor at **115200 baud**
 
 ## System Logic
-Button pressed → masterEnabled toggles ON/OFF
-masterEnabled = OFF → motor always stopped
-masterEnabled = ON  → beam break controls motor:
-Beam BROKEN  (plastic present) → motor runs at pot-set speed
-Beam CLEAR   (no plastic)      → wait 300ms → motor stops
+
+```
+Button pressed           -> masterEnabled toggles ON/OFF
+masterEnabled = OFF      -> motor always stopped
+masterEnabled = ON       -> beam break controls motor:
+  Beam BROKEN (plastic)  -> motor runs at pot-set speed
+  Beam CLEAR (no plastic)-> wait 300 ms -> motor stops
+```
+
+## Mechanical Design
+
+One NEMA 17 stepper drives a GT2 timing belt that turns both the filament feed wheel and a Forstner-bit cutter at a fixed 7:1 ratio. Feed and cut stay synchronized mechanically, so pellet length (target 3 mm) does not depend on software timing. The design was chosen from 7 concepts using a weighted decision matrix.
+
+## Test Results
+
+| Test | Result |
+| --- | --- |
+| Power and logic | ESP32 and driver initialize on 12 V; 0.5 A idle draw |
+| Belt synchronization | 7:1 ratio held, 0 mm belt slip |
+| Feed traction | 1 m PLA strand fed autonomously at 3 mm/s |
+| Noise | Under 50 dB (decibel meter) |
+| Cutter | Clean cuts on first pellets, then a jam from poor chip clearance at the bit |
+
+**Next step:** improve chip evacuation at the cutter before longer runs.
+
 ## Project Context
 
 Built for a recycled plastic pelletizer designed and fabricated at Western University. 
