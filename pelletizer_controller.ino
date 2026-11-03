@@ -2,8 +2,8 @@
 //  PELLETIZER CONTROLLER — ESP32 + AccelStepper + Beam Break Sensor
 //  Target MCU : ESP32 (Arduino-ESP32 core)
 //  Driver      : A4988 / TMC2209 (STEP/DIR interface)
-//  Author      : Embedded Systems Engineer
-//  Version     : 2.0.0
+//  Author      : Munhib Ahmed
+//  Version     : ES 1050 team project, Winter 2026
 // =============================================================================
 //
 //  ┌─────────────────────────────────────────────────────────────────────────┐
