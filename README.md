@@ -86,7 +86,7 @@ One NEMA 17 stepper drives a GT2 timing belt that turns both the filament feed w
 | Power and logic | ESP32 and driver initialize on 12 V; 0.5 A idle draw |
 | Belt synchronization | 7:1 ratio held, 0 mm belt slip |
 | Feed traction | 1 m PLA strand fed autonomously at 3 mm/s |
-| Noise | Under 50 dB (decibel meter) |
+| Noise | Under 50 dB (phone sound meter) |
 | Cutter | Clean cuts on first pellets, then a jam from poor chip clearance at the bit |
 
 **Next step:** improve chip evacuation at the cutter before longer runs.
