@@ -1,7 +1,7 @@
 // =============================================================================
 //  PELLETIZER CONTROLLER — ESP32 + AccelStepper + Beam Break Sensor
 //  Target MCU : ESP32 (Arduino-ESP32 core)
-//  Driver      : A4988 / TMC2209 (STEP/DIR interface)
+//  Driver      : A4988 (STEP/DIR interface)
 //  Author      : Munhib Ahmed
 //  Version     : ES 1050 team project, Winter 2026
 // =============================================================================
@@ -11,8 +11,8 @@
 //  │                                                                          │
 //  │  ESP32 Pin        Driver / Peripheral                                    │
 //  │  ─────────────    ───────────────────────────────────────────────────    │
-//  │  GPIO 26  ──────► STEP  pin on A4988 / TMC2209                          │
-//  │  GPIO 27  ──────► DIR   pin on A4988 / TMC2209                          │
+//  │  GPIO 26  ──────► STEP  pin on A4988                                    │
+//  │  GPIO 27  ──────► DIR   pin on A4988                                    │
 //  │  GPIO 14  ──────► ENA   pin on driver  (LOW = enabled)                  │
 //  │  3.3 V    ──────► LOGIC VCC on driver                                   │
 //  │  GND      ──────► GND   on driver                                        │

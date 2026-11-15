@@ -19,7 +19,7 @@ variable speed control.
 | Component | Details |
 |---|---|
 | Microcontroller | ESP32 (Arduino-ESP32 core) |
-| Stepper Driver | A4988 / TMC2209 (STEP/DIR interface) |
+| Stepper Driver | A4988 (STEP/DIR interface) |
 | Stepper Motor | NEMA 17, 1.8°/step (200 steps/rev) |
 | Microstepping | 16x (3200 steps/rev) |
 | Beam Sensor | Adafruit #2167 or equivalent IR break-beam |
@@ -97,4 +97,6 @@ Built for a recycled plastic pelletizer designed and fabricated at Western Unive
 The system processes reclaimed plastic material by automatically controlling the 
 cutter feed mechanism based on material presence detection.
 
-![Pelletizer Hardware](hardware.jpg)
+![Early gear-drive prototype](hardware.jpg)
+
+*Early prototype with a 3D-printed spur-gear drive. The final build replaced the gears with the GT2 belt drive described above.*
