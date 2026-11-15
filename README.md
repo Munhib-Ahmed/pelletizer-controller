@@ -77,7 +77,7 @@ masterEnabled = ON       -> beam break controls motor:
 
 ## Mechanical Design
 
-One NEMA 17 stepper drives a GT2 timing belt that turns both the filament feed wheel and a Forstner-bit cutter at a fixed 7:1 ratio. Feed and cut stay synchronized mechanically, so pellet length (target 3 mm) does not depend on software timing. The design was chosen from 7 concepts using a weighted decision matrix.
+One NEMA 17 stepper drives two GT2 timing belts that turn both the filament feed wheel and a Forstner-bit cutter at a fixed 7:1 ratio. Feed and cut stay synchronized mechanically, so pellet length (target 3 mm) does not depend on software timing. The design was chosen from 7 concepts using a weighted decision matrix.
 
 ## Test Results
 
