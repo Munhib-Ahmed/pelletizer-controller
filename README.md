@@ -81,7 +81,7 @@ One NEMA 17 stepper drives two GT2 timing belts that turn both the filament feed
 
 ## Prototype Test Results
 
-These tests ran on the early gear-drive prototype (pictured below), not the final GT2 belt build.
+These tests ran on the early gear-drive prototype (pictured below), not the final GT2 belt build. They used an earlier firmware version and a different driver board; the firmware in this repo was written for the A4988 build.
 
 | Test | Result |
 | --- | --- |
