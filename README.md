@@ -1,5 +1,7 @@
 # Pelletizer Controller — ESP32
 
+**Project page:** https://www.munhibahmed.com/projects/pelletizer · **Portfolio:** https://www.munhibahmed.com
+
 Stepper motor controller for a recycled plastic pelletizer system, built for ES 1050 at Western University 
 (Winter 2026, team of 5). Controls a cutting/feeding mechanism using an 
 ESP32, beam break sensor for automatic material detection, and potentiometer-based 
